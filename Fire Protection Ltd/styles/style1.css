@@ -1,0 +1,250 @@
+/*
+CSS for the main page of Fire Protection Ltd.
+*/
+
+<<<<<<< HEAD:Fire Protection Ltd/styles/style.css
+body, div, p, header, h1, h2, h3, h4, nav, ul, li, a, img, section, main, footer, article, aside {
+=======
+body, div, p, header, h1, h2, h3, h4, h5, nav, ul, li, a, img, section, main, footer, article, aside {
+>>>>>>> 07b9549625db130d82606588c189b00885a8e250:styles/style.css
+    margin: 0;
+    padding: 0;
+    font-family: 'Arsenal', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url("../Images/white-wall.jpg");
+}
+
+#wrapper {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    box-shadow: 0px 0px 10px #888;
+    background: rgba(180, 180, 180, 0.0)
+}
+
+#wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+#heading {
+    position: relative;
+    width: 100%;
+}
+
+#top-div {
+    position: relativex;
+    top: 0;
+    z-index: 997;
+    width: 100%;
+}
+
+.head-div {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(237, 237, 237, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+}
+
+.logo {
+    float: left;
+    padding-left: 40px;
+}
+
+.logo img {
+    width: 170%;
+}
+
+.headers {
+    width: 80%;
+    padding-left: 100px;
+    padding-bottom: 60px;
+}
+
+.headers h1 {
+    padding-top: 60px;
+}
+
+.headers a {
+    text-decoration: none;
+}
+
+.headers h1 a {
+    font-size: 43px;
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+    color: #e80202;
+    text-shadow: 2px 1px 6px white;
+}
+
+.headers h5 a {
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 5px black
+}
+
+.headers span {
+    display: block;
+    padding-top: 5px;
+}
+
+.headers span a {
+    font-weight: bold;
+    font-size: 19px;
+    color: darkgoldenrod;
+    text-shadow: 1px 1px 3px #ccc;
+}
+
+
+/*    Main Navigation    */
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 22px 60px;
+    background-color: #333;
+}
+
+li a:hover {
+    color: #fcd308;
+    background: #111;
+}
+
+li a:not(.active):hover(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #fcd308;
+}
+
+
+/*   Animation list   */
+
+#anime-div {
+    position: relative;
+    margin-top: 1px;
+    box-shadow: 0px 0px 10px #888;
+}
+
+#anime-div img {
+    width: 100%;
+    height: 365px;
+    box-shadow: 0px 10px 15px #ccc;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf4FadeInOut {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#anime-div img:nth-of-type(1) {
+    animation-delay: 18s;
+}
+
+#anime-div img:nth-of-type(2) {
+    animation-delay: 12s;
+}
+
+#anime-div img:nth-of-type(3) {
+    animation-delay: 6s;
+}
+
+#anime-div img:nth-of-type(4) {
+    animation-delay: 2;
+}
+
+#anime-div img {
+    animation-name: cf4FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+}
+
+
+/*  Advertisement   */
+
+#advert {
+    position: relative;
+    top: 380px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#advert div {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    vertical-align: middle;
+    padding-top: 60px;
+    background: rgba(204, 204, 204, 0.1);
+}
+
+#advert img:first-child {
+    width: 30%;
+    padding-right: 80px;
+}
+
+#advert img:last-child {
+    width: 16%;
+}
+
+
+/*   Footer   */
+
+#footer {
+    position: relative;
+    top: 740px;
+    float: left;
+    width: 100%;
+    color: white;
+    background: #333;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#footer p:last-child {
+    margin-top: 40px;
+    font-size: 10px;
+}
